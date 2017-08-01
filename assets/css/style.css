@@ -1,87 +1,132 @@
+body {
+  padding-top: 50px;
+}
+
 video {
   width: 100vw;
+  /*height: calc(100vh - 45px - 1.5em);*/
+  filter: opacity(80%) sepia(20%);
+  overflow: hidden;
+  font-size: 0px;
 }
 
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
+  /*overflow-y: hidden;*/
 }
 
-.right{
+.right {
   padding-right: 20px;
 }
 
 @media (min-width: 992px) {
-    .abs-center-x {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  .abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
-.crop {
-  overflow:hidden;
-  display:block;
-  height: 60vh;
-}
 
+/*body {
+  padding-top: 70px;
+  overflow-x: hidden;
+}*/
 
 .wrap {
-  padding-top: 70px;
-}
-
-header {
-	height:60vh;
-}
-
-#nav.affix {
-    position: fixed;
-    top: 0;
-    padding-bottom: 70px;
-    width: 100%;
-    z-index:9999999;
+  margin-top: -5px;
 }
 
 .typewriter h1 {
   color: orange;
   font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
   position: absolute;
-  top: 52%;
-  left: 50%;
+  top: 80vh;
+  left: 50vw;
+  z-index: 99;
   transform: translate(-50%, -50%);
-  animation:
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
+
 
 /* The typing effect */
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
 }
+
 
 /* The typewriter cursor effect */
+
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange
+  }
 }
 
-#about {
-  padding-top: 40px;
+.abouts {
+  margin-top: -40px;
 }
 
 .auth-image {
-  width: 10vw;
-  float: left;
-  padding-right: 10px;
-  filter: grayscale(100%);
+  width: 20vw;
+  display: block;
+  margin: 0 auto;
+  top: 50vh;
 }
 
-p {
-  padding-left: 50px;
+#my-div {
+  background: #9d9d9d;
+  height: 60vh;
+}
+
+.bout-me {
+  height: 50vh;
+}
+
+.text-center a {
+  align-items: center;
+}
+
+.city {
+  display: block;
+  margin: 0 auto;
+}
+
+.grey {
+  background: #9d9d9d;
+}
+
+.anchor {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  top: -50px;
+  left: 0;
+  visibility: hidden;
+}
+
+.section {
+  position: relative;
 }
