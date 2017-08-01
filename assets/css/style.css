@@ -20,7 +20,7 @@ video {
   padding-right: 20px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .abs-center-x {
     position: absolute;
     left: 50%;
@@ -90,14 +90,11 @@ video {
 .auth-image {
   width: 20vw;
   display: block;
-  margin: 0 auto;
-  top: 50vh;
+  margin: auto;
+
 }
 
-#my-div {
-  background: #9d9d9d;
-  height: 60vh;
-}
+
 
 .bout-me {
   height: 50vh;
@@ -114,6 +111,9 @@ video {
 
 .grey {
   background: #9d9d9d;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
 }
 
 .anchor {
@@ -130,3 +130,38 @@ video {
 .section {
   position: relative;
 }
+
+.icon {
+  margin-top: 5px;
+  font-size: 5vw;
+  color: green;
+  padding: 5px;
+}
+
+#theBorder {
+  border: 10px solid #222;
+
+}
+
+.i-space{
+  padding: 5vh;
+}
+.color {
+  background: #222;
+  color: white;
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.half {
+  height: 50vh;
+}
+
+/*.text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
