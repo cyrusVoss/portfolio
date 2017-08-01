@@ -134,7 +134,7 @@ video {
 .icon {
   margin-top: 5px;
   font-size: 5vw;
-  color: green;
+  color: orange !important;
   padding: 5px;
 }
 
