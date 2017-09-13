@@ -1,19 +1,33 @@
 body {
   padding-top: 50px;
+  font-size: 16px;
+}
+.video-container {
+  position: relative;
+}
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+  filter: opacity(80%) sepia(20%);
 }
 
-video {
-  width: 100vw;
-  /*height: calc(100vh - 45px - 1.5em);*/
-  filter: opacity(80%) sepia(20%);
-  overflow: hidden;
-  font-size: 0px;
+.typewriter {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
 }
 
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-  /*overflow-y: hidden;*/
 }
 
 .right {
@@ -28,15 +42,9 @@ video {
   }
 }
 
-
-/*body {
-  padding-top: 70px;
-  overflow-x: hidden;
-}*/
-
-.wrap {
+/*.wrap {
   margin-top: -5px;
-}
+}*/
 
 .typewriter h1 {
   color: orange;
@@ -50,12 +58,8 @@ video {
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
-  /* Adjust as needed */
-  position: absolute;
-  top: 80vh;
-  left: 50vw;
   z-index: 99;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
   animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
 
@@ -83,17 +87,10 @@ video {
   }
 }
 
-.abouts {
-  margin-top: -40px;
+
+p {
+  font-size: 1.3vw;
 }
-
-.auth-image {
-  width: 20vw;
-  display: block;
-  margin: auto;
-
-}
-
 
 
 .bout-me {
@@ -102,11 +99,6 @@ video {
 
 .text-center a {
   align-items: center;
-}
-
-.city {
-  display: block;
-  margin: 0 auto;
 }
 
 .grey {
@@ -146,22 +138,23 @@ video {
 .i-space{
   padding: 5vh;
 }
+
 .color {
   background: #222;
   color: white;
 }
+
 .row {
   margin-right: 0px;
   margin-left: 0px;
 }
 
 .half {
-  height: 50vh;
+  height: calc(50vh - 25px);
 }
 
-/*.text-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}*/
+.scale-image {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
