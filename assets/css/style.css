@@ -168,7 +168,22 @@ p {
   width: 100%;
 }
 
-@@media screen (max-width: 700px) {
+.flex-move {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.moveIt {
+  flex: 1;
+}
 
+@media (max-width: 767px) {
+  .moveIt {
+    flex: 1 100%; /* Actually it should be 50%
+    but there's a margin of 1%
+    around the columns, hence 50%-2(1%) = 48% */
+  }
+
+  .flex-move > :nth-child(1) { order: 2; }
+  .flex-move > :nth-child(2) { order: 1; }
 }
