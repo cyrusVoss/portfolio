@@ -5,7 +5,7 @@ body {
 .video-container {
   position: relative;
 }
-video {
+.cover {
   height: auto;
   vertical-align: middle;
   width: 100%;
@@ -104,6 +104,7 @@ p {
 
 .grey {
   background: #9d9d9d;
+  /* background-image: url(../images/texture.png); */
   display: flex;
   justify-content: center;
   height: 50%;
@@ -175,6 +176,27 @@ p {
 
 .moveIt {
   flex: 1;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/someCity.jpg");
+
+    /* Set a specific height */
+    height: 50vh;
+    /* width: 100%;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centerIt {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
