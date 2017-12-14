@@ -9,7 +9,7 @@ body {
   height: auto;
   vertical-align: middle;
   width: 100%;
-  filter: opacity(80%) sepia(20%);
+  filter: opacity(80%) sepia(20%) grayscale(90%);
 }
 
 .typewriter {
@@ -41,10 +41,6 @@ body {
     transform: translateX(-50%);
   }
 }
-
-/*.wrap {
-  margin-top: -5px;
-}*/
 
 .typewriter h1 {
   color: orange;
@@ -102,9 +98,15 @@ p {
   align-items: center;
 }
 
+/* .grey::before {
+    background-image: url(../images/texture.png);
+    z-index: -1;
+
+} */
+
 .grey {
   background: #9d9d9d;
-  /* background-image: url(../images/texture.png); */
+
   display: flex;
   justify-content: center;
   height: 50%;
@@ -127,17 +129,9 @@ p {
 
 .icon {
   margin-top: 5px;
-  font-size: 5vw;
+  font-size: 8rem;
   color: orange !important;
   padding: 5px;
-}
-
-/*.middle {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
 }
 
 #theBorder {
@@ -178,9 +172,10 @@ p {
   flex: 1;
 }
 
-.parallax {
+.coder {
     /* The image used */
-    background-image: url("../images/someCity.jpg");
+    background-image: url("../images/bunchCode.jpg");
+    filter: grayscale(70%) opacity(80%) sepia(20%);
 
     /* Set a specific height */
     height: 50vh;
@@ -193,17 +188,50 @@ p {
     background-size: cover;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("../images/dc.jpg");
+    filter: grayscale(90%) opacity(80%) sepia(20%);
+
+    /* Set a specific height */
+    height: 50vh;
+    /* width: 100%;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .color{
+  background: #9d9d9d;
+} */
+
 .centerIt {
-  height: 100vh;
   display: flex;
   justify-content: center;
+}
+@keyframes theAnimate {
+  0% { opacity: 1; }
+  10% { opacity: .9; }
+  20% { opacity: .7; }
+  30% { opacity: .5; }
+  40% { opacity: .3; }
+  50% { opacity: .1; }
+  60% { opacity: .3; }
+  70% { opacity: .5; }
+  80% { opacity: .7; }
+  90% { opacity: .9; }
+  100% { opacity: 1; }
+}
+.theAnimate {
+  animation:  theAnimate 5s linear infinite;
 }
 
 @media (max-width: 767px) {
   .moveIt {
-    flex: 1 100%; /* Actually it should be 50%
-    but there's a margin of 1%
-    around the columns, hence 50%-2(1%) = 48% */
+    flex: 1 100%;
   }
 
   .flex-move > :nth-child(1) { order: 2; }
